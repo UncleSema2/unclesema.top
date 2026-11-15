@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f8f7f3">
+  <title>Semen Korobko — World Models, Reasoning & Planning</title>
+  <meta name="description" content="Semen Korobko is a research engineer working on world models, predictive representations, multimodal reasoning, and planning. GigaChat Omni · previously Yandex Autonomous Vehicles · ITMO.">
+  <link rel="canonical" href="https://unclesema.top/">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Semen Korobko — Research Engineer">
+  <meta property="og:description" content="World models, representation learning, reasoning, and planning.">
+  <meta property="og:url" content="https://unclesema.top/">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./assets/fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./assets/style.css">
+  <script src="./assets/main.js" defer></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Semen Korobko","alternateName":"UncleSema","url":"https://unclesema.top/","jobTitle":"Research Engineer","email":"mailto:semenkorobko2@gmail.com","sameAs":["https://github.com/UncleSema2","https://t.me/UncleSema"],"alumniOf":{"@type":"CollegeOrUniversity","name":"ITMO University"}}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell" id="top">
+    <div class="layout">
+      <aside class="sidebar" aria-label="Profile and navigation">
+        <a class="wordmark" href="#top" aria-label="Semen Korobko, back to top"><span>Semen</span> <span>Korobko<span class="name-dot">.</span></span></a>
+        <p class="role">Research engineer</p>
+        <p class="sidebar-interests">World models, representation learning, reasoning &amp; planning.</p>
+        <div class="profile-links">
+          <a href="mailto:semenkorobko2@gmail.com">Email <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/UncleSema2" rel="me">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://t.me/UncleSema" rel="me">Telegram <span aria-hidden="true">↗</span></a>
+          <a class="cv-link" href="./assets/semen-korobko-cv.pdf" type="application/pdf">Curriculum vitae <span aria-hidden="true">↓</span></a>
+        </div>
+        <nav class="page-nav" aria-label="On this page">
+          <a href="#about" aria-current="location">About</a>
+          <a href="#research">Research</a>
+          <a href="#experience">Experience</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#publications">Publications &amp; talks</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" hidden>
+          <svg class="theme-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4m0-14.2-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>
+          <span class="theme-label">Light</span>
+        </button>
+      </aside>
+
+      <main id="main">
+        <section class="about section" id="about" aria-labelledby="about-heading">
+          <p class="eyebrow">A little about me</p>
+          <h1 id="about-heading">Learning to represent,<br>reason, and act.</h1>
+          <p class="intro">I'm Semen, a research engineer interested in how learned representations of the world can support reasoning, planning, and decision-making.</p>
+          <p>I currently lead tool-use post-training for <strong>GigaChat Omni at Sber</strong>, working on cold-start data, evaluations, and reinforcement learning. Previously, I started the team's VLM effort at <strong>Yandex Autonomous Vehicles</strong>, taking models from raw sensor data to on-vehicle testing.</p>
+          <p>I'm completing an M.Sc. in Deep Learning and Generative Artificial Intelligence at <strong>ITMO University</strong>, where I also studied Applied Mathematics and Computer Science.</p>
+          <div class="research-question">
+            <span class="question-mark" aria-hidden="true">↳</span>
+            <p>How can we learn predictive representations that help models reason about what comes next?</p>
+          </div>
+        </section>
+
+        <section class="section" id="research" aria-labelledby="research-heading">
+          <div class="section-heading"><span class="section-index" aria-hidden="true">01</span><h2 id="research-heading">Research</h2></div>
+          <p class="section-intro">My interests sit at the intersection of world models, self-supervised representation learning, latent dynamics, and model-based reinforcement learning.</p>
+
+          <article class="research-entry">
+            <div class="entry-meta"><span>Predictive representations</span><span>Research prototype · Yandex</span></div>
+            <h3>Planning in latent space</h3>
+            <p>I explored JEPA-based trajectory planning through sequential prediction of future latent states. A compact model with a ViT-B backbone and a roughly 20M-parameter latent predictor outperformed a substantially larger autoregressive planning baseline on selected driving scenarios.</p>
+          </article>
+
+          <article class="research-entry">
+            <div class="entry-meta"><span>Multimodal reasoning</span><span>Ongoing · ITMO &amp; GigaChat</span></div>
+            <h3>Allocating computation to reasoning</h3>
+            <p>I'm studying variable-length latent and textual reasoning in vision–language models. I implemented up-front budget prediction and learned stop heads as alternative ways to control reasoning length.</p>
+            <p class="entry-note">I reproduced <a href="https://arxiv.org/abs/2509.24251">LVR</a>, <a href="https://arxiv.org/abs/2604.20328">HyLaR</a>, and <a href="https://arxiv.org/abs/2608.00743">LUT</a>; current experiments use Qwen3.5 and Qwen3.8 (27B).</p>
+          </article>
+
+          <article class="research-entry">
+            <div class="entry-meta"><span>Data &amp; perception</span><span>Bachelor's thesis · 2025</span></div>
+            <h3>Finding data for rare road objects</h3>
+            <p>I built a VLM-based pipeline for mining perception errors and selecting examples for detector fine-tuning, evaluating Yandex VLM, Qwen2.5-VL, and InternVL2.5 on 50,000 images. For the object-counting component, prompt tuning reduced MSE by 31% (15.55 → 10.73) relative to the same 35B baseline without adaptation.</p>
+          </article>
+        </section>
+
+        <section class="section" id="experience" aria-labelledby="experience-heading">
+          <div class="section-heading"><span class="section-index" aria-hidden="true">02</span><h2 id="experience-heading">Experience</h2></div>
+          <div class="timeline">
+            <article class="timeline-entry">
+              <p class="timeline-date">2026 — now</p>
+              <div><h3>Sber <span class="muted">/ GigaChat Omni</span></h3><p class="position">Lead, Reasoning and Tool Use</p><p>I initiated and own the tool-use training effort as its sole technical contributor: web search, thinking with images, calculator use, and MCP tools. The work includes evaluations with tool execution and GRPO/CISPO recipes with judge-based and algorithmic rewards.</p></div>
+            </article>
+            <article class="timeline-entry">
+              <p class="timeline-date">2024 — 2026</p>
+              <div><h3>Yandex <span class="muted">/ Autonomous Vehicles</span></h3><p class="position">Software Engineer, ML R&amp;D</p><p>I built the full model release pipeline, from mining raw logs and preprocessing video/LiDAR to training, evaluation, simulator testing, and vehicle deployment. A deployed VLM planner predicted 50-step trajectories over five seconds with 200 ms inference latency and passed test-track safety and maneuver tests.</p><p class="entry-note">Training and inference workloads on hundreds of GPUs; data tooling for archives containing hundreds of petabytes of raw logs.</p></div>
+            </article>
+            <article class="timeline-entry">
+              <p class="timeline-date">2021 — 2024</p>
+              <div><h3>T-Bank <span class="muted">/ Core Technologies</span></h3><p class="position">Software Engineer</p><p>I developed internal ML services and software tools for bank employees.</p></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="teaching" aria-labelledby="teaching-heading">
+          <div class="section-heading"><span class="section-index" aria-hidden="true">03</span><h2 id="teaching-heading">Teaching</h2></div>
+          <article class="teaching-entry"><div><h3>Algorithms and Data Structures</h3><p class="position">Course creator · T-Bank</p><p>Created the course for university students across three spring offerings.</p></div><p class="teaching-date">Spring 2024<br>2025 &amp; 2026</p></article>
+          <article class="teaching-entry"><div><h3>Programming at ITMO</h3><p class="position">Teaching assistant · Seminars</p><p>Introduction to Programming (Fall 2024) and Programming Paradigms (Spring 2025), courses led by Georgiy Korneev.</p></div><p class="teaching-date">2024 — 2025</p></article>
+        </section>
+
+        <section class="section" id="publications" aria-labelledby="publications-heading">
+          <div class="section-heading"><span class="section-index" aria-hidden="true">04</span><h2 id="publications-heading">Publications &amp; talks</h2></div>
+          <article class="publication-entry">
+            <span class="publication-year">2023</span>
+            <div><h3><a href="https://doi.org/10.7256/2585-7797.2023.1.40376">Application of Software Methods for Automated Processing of Sources of Personal Origin <span aria-hidden="true">↗</span></a></h3><p class="authors">Nikita Prigodich, <strong>Semen Korobko</strong></p><p class="entry-note"><em>Historical Informatics</em>, no. 1, pp. 1–9. In Russian.</p></div>
+          </article>
+          <article class="publication-entry"><span class="publication-year">2023</span><div><h3><a href="https://kmu.itmo.ru/digests/article/10334">Preprocessing Digital Copies of Historical Sources <span aria-hidden="true">↗</span></a></h3><p class="authors">Semen Korobko</p><p class="entry-note">Talk and published abstract · 12th Congress of Young Scientists, ITMO. In Russian.</p></div></article>
+        </section>
+
+        <footer class="footer">
+          <p>For research or a conversation, <a href="mailto:semenkorobko2@gmail.com">say hello <span aria-hidden="true">↗</span></a>.</p>
+          <div class="footer-bottom"><span>© <span id="year">2026</span> Semen Korobko</span><a href="#top">Back to top ↑</a></div>
+        </footer>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
